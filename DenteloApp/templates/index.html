@@ -1,0 +1,926 @@
+{% load static %}
+
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dentelo - We Are Best Dental Service</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'assets/images/favicon_.svg'%}" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="header-top">
+      <div class="container">
+
+        <ul class="contact-list">
+
+          <li class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+
+            <a href="mailto:info@example.com" class="contact-link">info@example.com</a>
+          </li>
+
+          <li class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <a href="tel:+628052101786" class="contact-link">+62-8052-101-786</a>
+          </li>
+
+        </ul>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="header-bottom" data-header>
+      <div class="container">
+
+        <a href="#" class="logo">Dentelo.</a>
+
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li>
+              <a href="#service" class="navbar-link" data-nav-link>Services</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <a href="#" class="btn">Book appointment</a>
+
+        <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+          <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+          <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+        </button>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" style="background-image: url('{% static 'assets/images/hero-bg.png'%}')"
+        aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">Enjoy with Dentelo</p>
+
+            <h1 class="h1 hero-title">We Are Best Dental Service</h1>
+
+            <p class="hero-text">
+              We are a team of dedicated dental care professionals who aim to provide the best dental care services in the area. Our team of experts is here to help you achieve the smile you have always wanted.
+            </p>
+
+            <form action="" class="hero-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Your Email Address..." required
+                class="email-field">
+
+              <button type="submit" class="btn">Get Call Back</button>
+            </form>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="{% static 'assets/images/hero-banner.png'%}" width="587" height="839" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle text-center">Our Services</p>
+
+          <h2 class="h2 section-title text-center">What We Provide</h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{% static 'assets/images/service-icon-1.png'%}" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">Root Canal</h3>
+
+                  <p class="card-text">
+                    This treatment is intended to remove bacteria from the infected root canal, prevent further infection, and preserve the natural tooth.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{% static 'assets/images/service-icon-2.png'%}" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">Alignment Teeth</h3>
+
+                  <p class="card-text">
+                    Correcting teeth position. Correcting misaligned, crowded, or spaced teeth to improve oral health and aesthetics.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{% static 'assets/images/service-icon-3.png'%}" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">Cosmetic Teeth</h3>
+
+                  <p class="card-text">
+                    Esthetic dentistry aims to enhance the appearance of the smile, often through procedures such as teeth whitening, veneers, braces, or dental bonding.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-banner">
+              <figure>
+                <img src="{% static 'assets/images/service-banner.png'%}" width="409" height="467" loading="lazy"
+                  alt="service banner" class="w-100">
+              </figure>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{% static 'assets/images/service-icon-4.png'%}" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">Oral Hygiene</h3>
+
+                  <p class="card-text">
+                    Focus on preventive dental care. Thorough plaque/tartar removal, cleaning with advanced techniques, and personalized oral health advice.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{% static 'assets/images/service-icon-5.png'%}" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">Dental Surgery</h3>
+
+                  <p class="card-text"> 
+                    Medical procedures performed by dental professionals, include tooth extractions, wisdom tooth removal, dental implants, corrective jaw surgery, treatment of oral infections, and other surgical interventions.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="{% static 'assets/images/service-icon-6.png'%}" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">Cavity Inspection</h3>
+
+                  <p class="card-text">
+                    Comprehensive oral health checks aiming to identify tooth decay early to prevent more significant issues.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="{% static 'assets/images/about-banner.png'%}" width="470" height="538" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">We Care For Your Dental Health</h2>
+
+            <p class="section-text section-text-1">
+              Welcome to Dentelo, where your smile is our top priority! We are dedicated to providing exceptional dental care in a comfortable and friendly environment. Our team of experienced professionals is committed to helping you achieve and maintain optimal oral health through personalized treatments and the latest advancements in dentistry.
+            </p>
+
+            <p class="section-text">
+              Your comfort and confidence matter to us. From the moment you walk in, you’ll experience a warm, welcoming atmosphere where your concerns are heard and your dental goals are supported. Trust us to keep your smile bright, healthy, and beautiful for years to come.
+            </p>
+
+            <a href="#" class="btn">Read more</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DOCTOR
+      -->
+
+      <section class="section doctor" aria-label="doctor">
+        <div class="container">
+
+          <p class="section-subtitle text-center">Our Doctor</p>
+
+          <h2 class="h2 section-title text-center">Best Expert Dentist</h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="doctor-card">
+
+                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                  <img src="{% static 'assets/images/doctor-1.png'%}" width="460" height="500" loading="lazy" alt="Howard Holmes"
+                    class="img-cover">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Howard Holmes</a>
+                </h3>
+
+                <p class="card-subtitle">Dentist</p>
+
+                <ul class="card-social-list">
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="doctor-card">
+
+                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                  <img src="{% static 'assets/images/doctor-2.png'%}" width="460" height="500" loading="lazy" alt="Ella Thompson"
+                    class="img-cover">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Ella Thompson</a>
+                </h3>
+
+                <p class="card-subtitle">Dentist</p>
+
+                <ul class="card-social-list">
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="doctor-card">
+
+                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                  <img src="{% static 'assets/images/doctor-3.png'%}" width="460" height="500" loading="lazy" alt="Vincent Cooper"
+                    class="img-cover">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Vincent Cooper</a>
+                </h3>
+
+                <p class="card-subtitle">Dentist</p>
+
+                <ul class="card-social-list">
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="doctor-card">
+
+                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                  <img src="{% static 'assets/images/doctor-4.png'%}" width="460" height="500" loading="lazy" alt="Danielle Bryant"
+                    class="img-cover">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Danielle Bryant</a>
+                </h3>
+
+                <p class="card-subtitle">Dentist</p>
+
+                <ul class="card-social-list">
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta" aria-label="cta">
+        <div class="container">
+
+          <figure class="cta-banner">
+            <img src="{% static 'assets/images/cta-banner.png'%}" width="1056" height="1076" loading="lazy" alt="cta banner"
+              class="w-100">
+          </figure>
+
+          <div class="cta-content">
+
+            <p class="section-subtitle">Book Dentail Appointment</p>
+
+            <h2 class="h2 section-title">We Are open And Welcoming Patients</h2>
+
+            <a href="#" class="btn">Book appointment</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <p class="section-subtitle text-center">Our Blog</p>
+
+          <h2 class="h2 section-title text-center">Latest Blog & News</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                  <img src="{% static 'assets/images/blog-1.jpg'%}" width="1180" height="800" loading="lazy"
+                    alt="Cras accumsan nulla nec lacus ultricies placerat." class="img-cover">
+
+                  <div class="card-badge">
+                    <ion-icon name="calendar-outline"></ion-icon>
+
+                    <time class="time" datetime="2025-12-25">24th December 2025</time>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">What Are Dental Veneers and Why Are They So Popular?</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Dental veneers are thin layers made of porcelain or composite resin, bonded to the front surface of teeth to improve their shape, color, or size. This procedure has gained popularity due to its ability to significantly enhance a smile in a short time.
+                  </p>
+
+                  <a href="#" class="card-link">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                  <img src="{% static 'assets/images/blog-2.jpg'%}" width="1180" height="800" loading="lazy"
+                    alt="Dras accumsan nulla nec lacus ultricies placerat." class="img-cover">
+
+                  <div class="card-badge">
+                    <ion-icon name="calendar-outline"></ion-icon>
+
+                    <time class="time" datetime="2026-02-24">24th February 2026</time>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Single Implant, Solution for Installing a Single False Tooth by Implantation</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Adult teeth that are missing can no longer grow naturally. Therefore, one of the solutions is to install dentures or perform a dental implant. Even if only one tooth is lost, the condition can affect appearance and chewing function, thus disrupting daily activities.
+                  </p>
+
+                  <a href="#" class="card-link">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                  <img src="{% static 'assets/images/blog-3.jpg'%}" width="1180" height="800" loading="lazy"
+                    alt="Seas accumsan nulla nec lacus ultricies placerat." class="img-cover">
+
+                  <div class="card-badge">
+                    <ion-icon name="calendar-outline"></ion-icon>
+
+                    <time class="time" datetime="2026-03-24">24th March 2026</time>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Benefits of Regular Teeth Scaling You Need to Know</a>
+                  </h3>
+
+                  <p class="card-text">
+                   Many people believe that brushing twice a day is enough to maintain oral hygiene. However, food debris that escapes the toothbrush can accumulate and turn into plaque, which eventually hardens into tartar. Undergoing regular dental scaling provides numerous benefits for both oral and overall health. Teeth scaling is a deep-cleaning procedure performed by a dentist to remove plaque and tartar from the surface of the teeth, extending below the gumline.
+                  </p>
+
+                  <a href="#" class="card-link">Read More</a> 
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="contact">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Dentelo.</a>
+
+          <p class="footer-text">
+            Dentelo is a modern dental clinic committed to providing high-quality dental care with a personal touch. Our team of experienced professionals uses the latest technology to ensure the best outcomes for our patients.
+          </p>
+
+          <div class="schedule">
+            <div class="schedule-icon">
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+
+            <span class="span">
+              Monday - Saturday:<br>
+              9:00am - 10:00Pm
+            </span>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Other Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Services</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Project</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Our Team</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Latest Blog</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Root Canal</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Alignment Teeth</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Cosmetic Teeth</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Oral Hygiene</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Live Advisory</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+
+              <span class="span">Cavity Inspection</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="item-text">
+              Jl.1247/Plot No. 39, 15th Phase,
+              Tangsel, Indonesia
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+628052101786" class="footer-link">+62-8052-101-786</a>
+          </li>
+
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:dentelohelp@example.com" class="footer-link">dentelohelp@example.com</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2026 Dentelo. All Rights Reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'js/script.js'%}" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
