@@ -1,4 +1,4 @@
-# Dentelo-Dental-Service 
+# Dentelo-Dental-Service  
 
 ## Output
 https://github.com/user-attachments/assets/53fb0baf-39da-4e62-b91d-f5b7193a5ce0
